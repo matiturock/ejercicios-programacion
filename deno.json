@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "test:condicionales": "deno test condicionales.ts",
+    "test:bucles": "deno test bucles.ts",
+    "test:objetos": "deno test objetos-literales.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}

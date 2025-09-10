@@ -132,7 +132,8 @@ export class Persona {
   nombre: string;
   edad: number;
   constructor(nombre: string, edad: number) {
-    // Tu código aquí
+    this.nombre = nombre;
+    this.edad = edad;
   }
   saludar(): string {
     return "";
@@ -145,7 +146,8 @@ export class Rectangulo {
   ancho: number;
   alto: number;
   constructor(ancho: number, alto: number) {
-    // Tu código aquí
+    this.ancho = ancho;
+    this.alto = alto;
   }
   area(): number {
     return 0;
@@ -157,7 +159,7 @@ export class Rectangulo {
 export class CuentaBancaria {
   saldo: number;
   constructor(saldoInicial: number) {
-    // Tu código aquí
+    this.saldo = saldoInicial;
   }
   depositar(monto: number): void {
     // Tu código aquí
@@ -170,11 +172,8 @@ export class CuentaBancaria {
 // Ejercicio 4:
 // Crea una clase Libro con propiedades titulo y paginas, y un método leer() que retorna "Leyendo {titulo}".
 export class Libro {
-  titulo: string;
-  paginas: number;
-  constructor(titulo: string, paginas: number) {
-    // Tu código aquí
-  }
+  // Esta es una forma abreviada de declarar propiedades en clases de TS
+  constructor(public titulo: string, public paginas: number) { }
   leer(): string {
     return "";
   }
@@ -183,11 +182,7 @@ export class Libro {
 // Ejercicio 5:
 // Crea una clase Producto con propiedades nombre y precio, y un método aplicarDescuento(porcentaje).
 export class Producto {
-  nombre: string;
-  precio: number;
-  constructor(nombre: string, precio: number) {
-    // Tu código aquí
-  }
+  constructor(public nombre: string, public precio: number) { }
   aplicarDescuento(porcentaje: number): void {
     // Tu código aquí
   }
@@ -198,7 +193,7 @@ export class Producto {
 export class Animal {
   especie: string;
   constructor(especie: string) {
-    // Tu código aquí
+    this.especie = especie;
   }
   sonido(): string {
     return "";
@@ -211,7 +206,8 @@ export class Estudiante {
   nombre: string;
   calificaciones: number[];
   constructor(nombre: string, calificaciones: number[]) {
-    // Tu código aquí
+    this.nombre = nombre;
+    this.calificaciones = calificaciones;
   }
   promedio(): number {
     return 0;
@@ -224,7 +220,8 @@ export class Empleado {
   nombre: string;
   salario: number;
   constructor(nombre: string, salario: number) {
-    // Tu código aquí
+    this.nombre = nombre;
+    this.salario = salario;
   }
   aumentarSalario(monto: number): void {
     // Tu código aquí
@@ -236,7 +233,7 @@ export class Empleado {
 export class Circulo {
   radio: number;
   constructor(radio: number) {
-    // Tu código aquí
+    this.radio = radio;
   }
   area(): number {
     return 0;
@@ -246,11 +243,8 @@ export class Circulo {
 // Ejercicio 10:
 // Crea una clase Vehiculo con propiedades marca y velocidad, y método acelerar(monto).
 export class Vehiculo {
-  marca: string;
-  velocidad: number;
-  constructor(marca: string, velocidad: number) {
-    // Tu código aquí
-  }
+  constructor(public marca: string, public velocidad: number) { }
+
   acelerar(monto: number): void {
     // Tu código aquí
   }

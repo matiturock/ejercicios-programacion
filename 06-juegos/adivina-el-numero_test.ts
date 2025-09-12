@@ -1,6 +1,5 @@
 // game.test.ts
 import { assertEquals, assertStringIncludes } from "@std/assert";
-import { spy, stub } from "@std/testing/mock";
 import { GameStatus, NumberGuessingGame } from "./adivina-el-numero.ts";
 
 Deno.test("NumberGuessingGame - adivinanza correcta", () => {

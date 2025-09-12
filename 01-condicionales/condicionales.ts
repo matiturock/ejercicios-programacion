@@ -71,96 +71,50 @@
 
 // Ejercicio 1:
 export function esParOImpar(numero: number): string {
-  return numero % 2 === 0 ? "Par" : "Impar";
+  return "";
 }
 
 // Ejercicio 2:
 export function mayorOMenorEdad(edad: number): string {
-  if (edad >= 18) {
-    return "Mayor de edad";
-  } else {
-    return "Menor de edad";
-  }
+  return "";
 }
 
 // Ejercicio 3:
 export function numeroMayor(a: number, b: number): number {
-  if (a > b) {
-    return a;
-  } else {
-    return b;
-  }
+  return 0;
 }
 
 // Ejercicio 4:
 export function esVocalOConsonante(letra: string): string {
-  const vocales = "aeiouáéíóú";
-  const consonantes = "bcdfghjklmnñopqrstvwxyz";
-
-  letra = letra.toLowerCase();
-
-  if (vocales.includes(letra)) {
-    return "Vocal";
-  } else if (consonantes.includes(letra)) {
-    return "Consonante";
-  } else {
-    return "Caracter desconocido";
-  }
+  return "";
 }
 
 // Ejercicio 5:
 export function aprobadoOSuspenso(nota: number): string {
-  return nota >= 5 ? "Aprobado" : "Suspenso";
+  return "";
 }
 
 // Ejercicio 6:
 export function tipoDeNumero(numero: number): string {
-  if (numero > 0) {
-    return "Positivo";
-  } else if (numero < 0) {
-    return "Negativo";
-  } else {
-    return "Cero";
-  }
+  return "";
 }
 
 // Ejercicio 7:
 export function sonIguales(a: number, b: number): string {
-  return a === b ? "Iguales" : "Distintos";
+  return "";
 }
 
 // Ejercicio 8:
 export function tipoDeDia(dia: string): string {
-  const diasLaborales = ["lunes", "martes", "miércoles", "jueves", "viernes"];
-  const finesDeSemana = ["sábado", "domingo"];
-
-  dia = dia.toLowerCase();
-
-  if (diasLaborales.includes(dia)) {
-    return "Día laboral";
-  } else if (finesDeSemana.includes(dia)) {
-    return "Fin de semana";
-  } else {
-    return "Día desconocido";
-  }
+  return "";
 }
 
 // Ejercicio 9:
 export function clasificarTemperatura(temp: number): string {
-  if (temp < 10) {
-    return "Frío";
-  } else if (temp >= 10 && temp <= 25) {
-    return "Templado";
-  } else {
-    return "Calor";
-  }
+  return "";
 }
 
 // Ejercicio 10:
 export function esBisiesto(anio: number): string {
-  if ((anio % 4 === 0 && anio % 100 !== 0) || (anio % 400 === 0)) {
-    return "Bisiesto";
-  } else {
-    return "No bisiesto";
-  }
+  return "";
 }
